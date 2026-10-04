@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>칼퇴 대작전 · Sneaky Salaryman</title>
+<meta name="description" content="오늘도 들키지 않고 칼퇴한다! 엄마, 부장님, CCTV, 사장님의 시선을 피해 99단계를 돌파하는 픽셀 잠입 게임. 광고·결제·추적 없음. / A pixel stealth game about clocking out on time. No ads, no purchases, no tracking.">
+<meta property="og:title" content="칼퇴 대작전 · Sneaky Salaryman">
+<meta property="og:description" content="들키면 끝! 직장인 잠입 퍼즐 / Don't get caught by the boss.">
+<meta property="og:image" content="icon.png">
+<link rel="icon" href="icon-small.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
+<style>
+  :root { --bg:#141526; --panel:#232542; --ink:#fff1d0; --dim:#94b0c2; --line:#333c57; --hot:#f28a2e; --gold:#ffcd4a; --dark:#1a1c2c; }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 400 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", system-ui, sans-serif;
+    background-image: radial-gradient(110% 60% at 50% -10%, #3e2463 0%, var(--bg) 62%); }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 16px; }
+  a { color: var(--gold); }
+  .px { font-family: "Galmuri11", -apple-system, sans-serif; }
+  header { text-align: center; padding: 64px 0 28px; }
+  header img { width: 128px; height: 128px; border: 4px solid var(--dark); box-shadow: 6px 6px 0 var(--dark); image-rendering: pixelated; border-radius: 24px; }
+  h1 { font-size: 40px; margin: 20px 0 4px; color: var(--gold); text-shadow: 4px 4px 0 var(--dark); }
+  .sub { color: var(--dim); margin: 0 0 6px; font-size: 15px; }
+  .tag { display: inline-block; margin-top: 14px; padding: 8px 14px; background: var(--hot); color: #fff; border: 3px solid var(--dark); box-shadow: 4px 4px 0 var(--dark); font-size: 15px; }
+  nav { display: flex; justify-content: center; gap: 8px; margin: 18px 0 0; flex-wrap: wrap; }
+  nav a { padding: 6px 12px; background: var(--panel); border: 3px solid var(--dark); color: var(--ink); text-decoration: none; font-size: 14px; }
+  .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 36px 0; }
+  .shots img { width: 100%; border: 3px solid var(--dark); box-shadow: 4px 4px 0 var(--dark); display: block; }
+  section { background: var(--panel); border: 3px solid var(--dark); box-shadow: 4px 4px 0 var(--dark); padding: 22px 22px 10px; margin: 0 0 28px; }
+  h2 { font-size: 21px; margin: 0 0 14px; color: var(--hot); }
+  h3 { font-size: 15px; margin: 18px 0 4px; color: var(--gold); }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 20px; }
+  .mail { font-size: 18px; }
+  footer { color: var(--dim); font-size: 14px; border-top: 1px solid var(--line); padding: 20px 0 48px; text-align: center; }
+  @media (max-width: 640px) {
+    h1 { font-size: 30px; }
+    .shots { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="칼퇴 대작전 app icon">
+    <h1 class="px">칼퇴 대작전</h1>
+    <p class="sub px">Sneaky Salaryman · 定時ダッシュ大作戦</p>
+    <p class="sub">오늘도 들키지 않고 칼퇴한다.</p>
+    <span class="tag px">광고 없음 · 결제 없음 · 추적 없음</span>
+    <nav class="px"><a href="#ko">한국어</a><a href="#en">English</a><a href="#ja">日本語</a><a href="privacy.html">개인정보처리방침 / Privacy</a></nav>
+  </header>
+
+  <div class="shots">
+    <img src="shots/01_caught.jpg" alt="부장님한테 딱 걸린 순간">
+    <img src="shots/02_slack.jpg" alt="부장님 몰래 딴짓하기">
+    <img src="shots/03_fridge.jpg" alt="엄마 몰래 냉장고 털기">
+    <img src="shots/04_excuse.jpg" alt="변명 찬스">
+  </div>
+
+  <section id="ko">
+    <h2 class="px">지원</h2>
+    <p>엄마, 부장님, 수다쟁이 동료, CCTV, 그리고 사장님까지 — 눈에서 나오는 레이더를 피해 냉장고 털기부터 회식 탈출, 사장님 몰래 퇴근까지 99단계를 돌파하세요.</p>
+    <h3 class="px">문의</h3>
+    <p class="mail"><a href="mailto:cloov2026@gmail.com">cloov2026@gmail.com</a></p>
+    <p>버그 제보 시 기기 모델, iOS 버전, 레벨 번호를 함께 보내 주시면 빠르게 확인할 수 있습니다.</p>
+    <h3 class="px">자주 묻는 질문</h3>
+    <ul>
+      <li><strong>진행 기록은 어디에 저장되나요?</strong> 기기에 저장되며, iCloud를 사용 중이면 본인 iCloud에도 백업되어 새 기기에서 이어서 할 수 있습니다.</li>
+      <li><strong>'칼퇴 시간' 알림을 끄고 싶어요.</strong> iOS 설정 → 알림 → 칼퇴 대작전에서 끌 수 있습니다.</li>
+      <li><strong>소리가 안 나요.</strong> 게임 설정의 효과음/배경음악이 켜져 있는지, 기기 볼륨을 확인해 주세요.</li>
+      <li><strong>들킨 장면을 영상으로 공유하려면?</strong> 게임 설정에서 '들킨 순간 영상 공유'를 켜면 됩니다. 켜지 않아도 이미지 카드로 공유할 수 있습니다.</li>
+      <li><strong>결제나 광고가 있나요?</strong> 없습니다. 의상과 책상 아이템은 모두 게임 속 월급으로 얻습니다.</li>
+    </ul>
+  </section>
+
+  <section id="en">
+    <h2 class="px">Support</h2>
+    <p>Sneak past Mom, your boss, chatty coworkers, CCTV — and the CEO — across 99 levels of everyday sneaking, from raiding the fridge to escaping the team dinner.</p>
+    <h3 class="px">Contact</h3>
+    <p class="mail"><a href="mailto:cloov2026@gmail.com">cloov2026@gmail.com</a></p>
+    <p>For bug reports, please include your device model, iOS version and the level number.</p>
+    <h3 class="px">FAQ</h3>
+    <ul>
+      <li><strong>Where is my progress saved?</strong> On your device, and in your own iCloud if you use it, so you can continue on a new device.</li>
+      <li><strong>How do I turn off the clock-out reminder?</strong> iOS Settings → Notifications → Sneaky Salaryman.</li>
+      <li><strong>No sound?</strong> Check Sound / Music in the game's settings and your device volume.</li>
+      <li><strong>Sharing caught moments as video?</strong> Turn on "Share caught clips (video)" in the game's settings. You can always share an image card instead.</li>
+      <li><strong>Any purchases or ads?</strong> None. Every outfit and desk item is earned with in-game salary.</li>
+    </ul>
+  </section>
+
+  <section id="ja">
+    <h2 class="px">サポート</h2>
+    <p>ママ、部長、おしゃべりな同僚、防犯カメラ、そして社長まで——視線をかいくぐって、冷蔵庫あさりから飲み会脱出、社長にバレずに退社まで99ステージに挑戦しよう。</p>
+    <h3 class="px">お問い合わせ</h3>
+    <p class="mail"><a href="mailto:cloov2026@gmail.com">cloov2026@gmail.com</a></p>
+    <p>不具合のご報告には、端末の機種・iOSバージョン・レベル番号を添えてください。</p>
+    <h3 class="px">よくある質問</h3>
+    <ul>
+      <li><strong>進行状況はどこに保存されますか？</strong> 端末と、ご利用の場合はご本人のiCloudに保存され、新しい端末で続きから遊べます。</li>
+      <li><strong>「定時だ！」通知をオフにしたい。</strong> iOSの設定 → 通知 → 定時ダッシュ からオフにできます。</li>
+      <li><strong>音が出ません。</strong> ゲーム設定の効果音/BGMと端末の音量をご確認ください。</li>
+      <li><strong>バレた瞬間を動画でシェアするには？</strong> ゲーム設定で「バレた瞬間を動画でシェア」をオンにしてください。オフでも画像カードでシェアできます。</li>
+      <li><strong>課金や広告はありますか？</strong> ありません。衣装やデスクアイテムはすべてゲーム内の給料で手に入ります。</li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Brad Kim · <a href="privacy.html">개인정보처리방침 / Privacy Policy</a> · <a href="mailto:cloov2026@gmail.com">cloov2026@gmail.com</a></footer>
+</div>
+</body>
+</html>
