@@ -3,37 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>칼퇴 대작전 — 개인정보처리방침 / Privacy Policy</title>
+<title>칼퇴 대작전 — 개인정보처리방침</title>
 <link rel="icon" href="icon-small.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css">
 <style>
-  :root { --bg:#141526; --panel:#232542; --ink:#fff1d0; --dim:#94b0c2; --line:#333c57; --hot:#f28a2e; --gold:#ffcd4a; }
+  :root { --bg:#141526; --panel:#232542; --ink:#fff1d0; --dim:#94b0c2; --line:#333c57; --hot:#f28a2e; --gold:#ffcd4a; --dark:#1a1c2c; }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink);
-    font: 400 16px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", system-ui, sans-serif; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 16px 80px; }
+    font: 400 16px/1.75 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", system-ui, sans-serif; }
+  body[data-lang="ko"] [lang="en"], body[data-lang="en"] [lang="ko"] { display: none !important; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
   a { color: var(--gold); }
   .px { font-family: "Galmuri11", -apple-system, sans-serif; }
-  h1 { font-size: 28px; margin: 0 0 4px; color: var(--gold); text-shadow: 3px 3px 0 #1a1c2c; }
-  .when { color: var(--dim); font-size: 14px; margin: 0 0 24px; }
-  nav { display: flex; gap: 8px; margin: 0 0 32px; flex-wrap: wrap; }
-  nav a { padding: 6px 12px; background: var(--panel); border: 3px solid #1a1c2c; color: var(--ink); text-decoration: none; font-size: 14px; }
-  section { background: var(--panel); border: 3px solid #1a1c2c; box-shadow: 4px 4px 0 #1a1c2c; padding: 20px 20px 8px; margin: 0 0 32px; }
+  h1 { font-size: 28px; margin: 0 0 4px; color: var(--gold); text-shadow: 3px 3px 0 var(--dark); }
+  .when { color: var(--dim); font-size: 14px; margin: 0 0 20px; }
+  .bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 0 0 28px; }
+  .langs { display: inline-flex; border: 3px solid var(--dark); box-shadow: 4px 4px 0 var(--dark); }
+  .langs button { font: inherit; font-size: 14px; padding: 6px 16px; border: 0; background: var(--panel); color: var(--dim); cursor: pointer; }
+  .langs button[aria-pressed="true"] { background: var(--hot); color: #fff; }
+  .back { padding: 6px 12px; background: var(--panel); border: 3px solid var(--dark); color: var(--ink); text-decoration: none; font-size: 14px; }
+  section { background: var(--panel); border: 3px solid var(--dark); box-shadow: 4px 4px 0 var(--dark); padding: 20px 20px 8px; margin: 0 0 32px; }
   h2 { font-size: 20px; margin: 0 0 12px; color: var(--hot); }
-  h3 { font-size: 15px; margin: 22px 0 6px; color: var(--gold); letter-spacing: .02em; }
+  h3 { font-size: 15px; margin: 22px 0 6px; color: var(--gold); }
   p, li { margin: 0 0 12px; }
   ul { padding-left: 20px; }
-  .headline { font-size: 18px; color: var(--ink); }
+  .headline { font-size: 18px; }
   footer { color: var(--dim); font-size: 14px; border-top: 1px solid var(--line); padding-top: 20px; }
 </style>
 </head>
-<body>
+<body data-lang="ko">
 <div class="wrap">
-  <h1 class="px">칼퇴 대작전 · Sneaky Salaryman</h1>
-  <p class="when">개인정보처리방침 · Privacy Policy · プライバシーポリシー &nbsp;—&nbsp; 시행일 / Effective 2026-10-05</p>
-  <nav class="px"><a href="#ko">한국어</a><a href="#en">English</a><a href="#ja">日本語</a><a href="./">← 지원 / Support</a></nav>
+  <h1 class="px"><span lang="ko">칼퇴 대작전</span><span lang="en">Sneaky Salaryman</span></h1>
+  <p class="when"><span lang="ko">개인정보처리방침 · 시행일 2026-10-05</span><span lang="en">Privacy Policy · Effective October 5, 2026</span></p>
+  <div class="bar px">
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-set-lang="ko" aria-pressed="true">한국어</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">English</button>
+    </div>
+    <a class="back" data-keep-lang href="./"><span lang="ko">← 지원</span><span lang="en">← Support</span></a>
+  </div>
 
-  <section id="ko">
+  <section lang="ko">
     <h2 class="px">개인정보처리방침</h2>
     <p class="headline"><strong>칼퇴 대작전은 개인정보를 수집하지 않습니다.</strong></p>
     <p>이 앱에는 광고, 분석(애널리틱스), 추적, 회원가입, 인앱 결제, 제3자 SDK가 없습니다. 개발자가 운영하는 서버도 없으며, 앱이 개발자에게 데이터를 보내는 일은 없습니다.</p>
@@ -57,7 +67,7 @@
     <p><a href="mailto:cloov2026@gmail.com">cloov2026@gmail.com</a></p>
   </section>
 
-  <section id="en">
+  <section lang="en">
     <h2 class="px">Privacy Policy</h2>
     <p class="headline"><strong>Sneaky Salaryman does not collect any personal data.</strong></p>
     <p>There is no advertising, no analytics, no tracking, no account system, no in-app purchase and no third-party SDK in this app. There is no developer-run server; the app never sends data to the developer.</p>
@@ -81,31 +91,30 @@
     <p><a href="mailto:cloov2026@gmail.com">cloov2026@gmail.com</a></p>
   </section>
 
-  <section id="ja">
-    <h2 class="px">プライバシーポリシー</h2>
-    <p class="headline"><strong>定時ダッシュ大作戦は個人情報を収集しません。</strong></p>
-    <p>本アプリには広告、アナリティクス、トラッキング、アカウント登録、アプリ内課金、第三者SDKは一切ありません。開発者が運営するサーバーもなく、アプリが開発者にデータを送信することはありません。</p>
-    <h3 class="px">端末に保存されるもの</h3>
-    <ul>
-      <li>ゲームの進行状況（クリアしたレベル、星、給料、衣装・デスクアイテム、設定）はアプリ内の保存領域にのみ保存されます。</li>
-      <li>iCloudをご利用の場合、機種変更時の復元のため、同じ進行状況が<strong>ご本人のiCloudアカウント</strong>に同期されることがあります。開発者はこのデータにアクセスできません。</li>
-      <li>アプリを削除すると端末内の記録も削除されます。</li>
-    </ul>
-    <h3 class="px">Appleのサービス</h3>
-    <ul>
-      <li><strong>Game Center</strong>（任意）：サインインしている場合、スコアとデイリー記録がAppleのGame Centerランキングに送信されます。Appleのプライバシーポリシーに従います。</li>
-      <li><strong>通知</strong>（任意）：「定時だ！」通知は端末内で予約されるローカル通知で、外部に送信される情報はありません。iOSの設定でいつでもオフにできます。</li>
-      <li><strong>動画シェア</strong>（任意・初期設定はオフ）：設定でオンにした場合のみ、バレた瞬間の短い画面クリップを端末内で作成します。ご自身でシェアしない限り端末の外には出ません。</li>
-    </ul>
-    <h3 class="px">お子様の情報</h3>
-    <p>個人情報を収集しないため、お子様の個人情報も収集しません。</p>
-    <h3 class="px">変更</h3>
-    <p>内容を変更する場合は、施行日とともに本ページに掲載します。</p>
-    <h3 class="px">お問い合わせ</h3>
-    <p><a href="mailto:cloov2026@gmail.com">cloov2026@gmail.com</a></p>
-  </section>
-
-  <footer>© 2026 Brad Kim · <a href="./">Support</a></footer>
+  <footer>© 2026 Brad Kim · <a data-keep-lang href="./"><span lang="ko">지원</span><span lang="en">Support</span></a></footer>
 </div>
+<script>
+  (function () {
+    var titles = { ko: "칼퇴 대작전 — 개인정보처리방침", en: "Sneaky Salaryman — Privacy Policy" };
+    function saved() { try { return localStorage.getItem("lang"); } catch (e) { return null; } }
+    function set(lang, persist) {
+      if (lang !== "en") lang = "ko";
+      document.body.setAttribute("data-lang", lang);
+      document.documentElement.lang = lang;
+      document.title = titles[lang];
+      document.querySelectorAll("[data-set-lang]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.setLang === lang)); });
+      document.querySelectorAll("a[data-keep-lang]").forEach(function (a) { a.href = a.getAttribute("href").split("?")[0] + "?lang=" + lang; });
+      if (persist) {
+        try { localStorage.setItem("lang", lang); } catch (e) {}
+        history.replaceState(null, "", "?lang=" + lang);
+      }
+    }
+    var param = new URLSearchParams(location.search).get("lang");
+    set(param || saved() || "ko", false);
+    document.querySelectorAll("[data-set-lang]").forEach(function (b) {
+      b.addEventListener("click", function () { set(b.dataset.setLang, true); });
+    });
+  })();
+</script>
 </body>
 </html>
