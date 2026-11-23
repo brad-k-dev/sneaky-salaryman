@@ -4,4 +4,4 @@
 
 - 지원: https://brad-k-dev.github.io/sneaky-salaryman/
 - 개인정보처리방침: https://brad-k-dev.github.io/sneaky-salaryman/privacy.html
-- 문의: cloov2026@gmail.com
+- 문의: offtasklab@gmail.com
